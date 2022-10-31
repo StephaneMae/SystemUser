@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+        BARANGAY CEDULA
+        <ion-icon routerLink="/requesting" name="arrow-back-outline" class="icon"></ion-icon>
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu">
+      </ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="header">
+    <img src="../../assets/img/dalandanan.png" class="logo">
+  </div>
+
+  <form id="form">
+    <ion-input fill="outline" placeholder="Full Name: Surname, Firstname, Middle Name" ></ion-input>
+    <ion-input fill="outline" placeholder="Gender:" ></ion-input>
+    <ion-input fill="outline" placeholder="Civil Status:" ></ion-input>
+    <ion-input fill="outline" placeholder="Address:" ></ion-input>
+    <ion-input fill="outline" placeholder="Purpose of Request:" ></ion-input>
+    <ion-input fill="outline" placeholder="Complete Address:" ></ion-input>
+    <ion-input fill="outline" placeholder="Birthdate:" ></ion-input>
+    <ion-input fill="outline" type="password" placeholder="Weight: in kg"></ion-input>
+    <ion-input fill="outline" type="password" placeholder="Height: in m"></ion-input>
+    <ion-button expand="block" shape="round" color="warning">Submit your Request</ion-button>
+  </form>
+</ion-content>

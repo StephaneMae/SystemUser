@@ -1,0 +1,7 @@
+{
+  "name": "BarangayApplication",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

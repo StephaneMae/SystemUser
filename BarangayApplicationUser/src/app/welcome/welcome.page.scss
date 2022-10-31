@@ -1,0 +1,31 @@
+ion-content{
+    --background: url('../../assets/img/blue.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+ 
+ .logo{
+    width: 50%;
+    margin: 20% 0 20% 0;
+ }
+ .title1{
+    margin-top: -10%;
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+ }
+ .paragraph{
+    margin-top: 10%;
+    font-weight: bold;
+ }
+ 
+ .ion-margin-top{
+   color: white;
+    margin-top: 20%;
+ 
+    .ion-margin-top1{
+       color: white;
+       font-weight: bold;
+       margin-top: 10%;
+    }
+ }

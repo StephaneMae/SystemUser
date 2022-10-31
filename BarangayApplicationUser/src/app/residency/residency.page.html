@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+        BARANGAY RESIDENCY
+        <ion-icon routerLink="/requesting" name="arrow-back-outline" class="icon"></ion-icon>
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu">
+      </ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="header">
+    <img src="../../assets/img/dalandanan.png" class="logo">
+  </div>
+
+  <form id="form">
+    <ion-input fill="outline" placeholder="What do you want to request?" ></ion-input>
+    <ion-input fill="outline" placeholder="Purpose of your Request" ></ion-input>
+    <ion-input fill="outline" placeholder="First Name" ></ion-input>
+    <ion-input fill="outline" placeholder="Middle Name" ></ion-input>
+    <ion-input fill="outline" placeholder="Last Name" ></ion-input>
+    <ion-input fill="outline" placeholder="Complete Address" ></ion-input>
+    <ion-input fill="outline" type="password" placeholder="Email Address"></ion-input>
+    <ion-input fill="outline" type="password" placeholder="Contact Number"></ion-input>
+    <ion-button expand="block" shape="round" color="warning">Submit your Request</ion-button>
+  </form>
+</ion-content>

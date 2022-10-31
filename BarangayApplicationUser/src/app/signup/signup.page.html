@@ -1,0 +1,35 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <a (click)="dismiss()">
+          <ion-icon slot="icon-only" routerLink="/welcome" name="arrow-back" color="secondary"></ion-icon>
+        </a>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/signup" color="secondary" routerLink="/login">LOGIN</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div id="header">
+    <img src="../../assets/img/dalandanan.png" class="logo">
+    <h1>Sign Up</h1>
+  </div>
+
+ 
+  <form id="form">
+    <ion-input fill="outline" placeholder="First Name" ></ion-input>
+    <ion-input fill="outline" placeholder="Middle Name" ></ion-input>
+    <ion-input fill="outline" placeholder="Last Name" ></ion-input>
+    <ion-input fill="outline" placeholder="Home/Apartment Lot No." ></ion-input>
+    <ion-input fill="outline" placeholder="Barangay" ></ion-input>
+    <ion-input fill="outline" placeholder="Email" ></ion-input>
+    <ion-input fill="outline" type="password" placeholder="Password"></ion-input>
+    <ion-input fill="outline" type="password" placeholder="Rewrite Your Password"></ion-input>
+    <ion-button routerLink="/login" expand="block" shape="round" color="warning">Register</ion-button>
+  </form>
+  
+</ion-content>

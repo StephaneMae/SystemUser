@@ -1,0 +1,73 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+        DASHBOARD
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu">
+      </ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="10">
+          <ion-icon name="person"> </ion-icon>
+            <ion-text>
+              <h1>Welcome
+              <br> Valued User
+            </h1>
+            </ion-text>
+        </ion-col>
+
+        <ion-slides class="slides" [options]='slideOpts'>
+          <ion-slide class="s1" *ngFor='let i of [1]'>
+            <div>
+              <img src="assets/img/Request.jpg" alt="Request" routerLink="/requesting">
+            </div>
+          </ion-slide>
+          <ion-slide class="s2" *ngFor='let i of [3]'>
+            <div>
+              <img src="assets/img/Receipt.jpg" alt="Receipt" routerLink="/receipt">
+            </div>
+          </ion-slide>
+        </ion-slides>
+
+        <ion-text>
+          AVAILABLE CERTIFICATES
+        </ion-text>
+
+        <ion-icon routerLink="/requesting" class="arrow" name="arrow-forward-outline"></ion-icon>
+
+
+        <ion-slides class="slides" [options]='slideOpts1'>
+          <ion-slide class="s1" *ngFor='let i of [1]'>
+            <div>
+              <img src="assets/img/Clearance.jpg" routerLink="/clearance" alt="Clearance" >
+            </div>
+          </ion-slide>
+          <ion-slide class="s2" *ngFor='let i of [2]'>
+            <div>
+              <img src="assets/img/Indigency.jpg" routerLink="/indigency" alt="Indigency">
+            </div>
+          </ion-slide>
+          <ion-slide class="s3" *ngFor='let i of [3]'>
+            <div>
+              <img src="assets/img/Residency.jpg" routerLink="/residency" alt="Residency">
+            </div>
+          </ion-slide>
+          <ion-slide class="s4" *ngFor='let i of [4]'>
+            <div>
+              <img src="assets/img/Cedula.jpg" routerLink="/cedula" alt="Cedula">
+            </div>
+          </ion-slide>
+        </ion-slides>
+
+      </ion-row>
+    </ion-grid>
+</ion-content>
+
+
+
